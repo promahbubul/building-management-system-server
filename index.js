@@ -258,6 +258,21 @@ app.get("/", (req, res) => {
   );
 });
 
+app.get("/api", (req, res) => {
+  res.send("working api");
+});
+
+app.get("/api/v1", (req, res) => {
+  res.send("working api v1");
+});
+
+app.get("/api/v1/data", (req, res) => {
+  res.send({
+    name: "Mahbubul Alam",
+    phone: "01623361555",
+  });
+});
+
 // post listen
 app.listen(port, () => {
   console.log(
