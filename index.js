@@ -116,6 +116,10 @@ async function run() {
       res.send(result);
     });
 
+    app.get("/google", (req, res) => {
+      res.send("<h2>I am goodle workd</h2>");
+    });
+
     // single user show
     app.get("/api/v1/single-member/:email", async (req, res) => {
       const email = req.params.email;
