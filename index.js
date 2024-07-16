@@ -31,19 +31,17 @@ async function run() {
     await client.connect();
 
     const apartmentCollection = client
-      .db("building-managment-system")
+      .db("building-bms")
       .collection("apartment");
 
-    const userCollection = client
-      .db("building-managment-system")
-      .collection("users");
+    const userCollection = client.db("building-bms").collection("users");
 
     const announcementCollection = client
-      .db("building-managment-system")
+      .db("building-bms")
       .collection("announcements");
 
     const agrementCollection = client
-      .db("building-managment-system")
+      .db("building-bms")
       .collection("agrements");
 
     /////////////////////////////////
